@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPF_Banken.Windows.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Banken.Windows"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Admin view" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
+        <ListView x:Name="MyListView" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="4"/>
+        <Button Name="BtnReturn" Grid.Column="3" Grid.Row="5" Content="Return" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Click="BtnReturn_Click"/>
+    </Grid>
+</Window>
